@@ -1,0 +1,33 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+.lang-switcher {
+  display: flex;
+  gap: rem(8);
+  margin-left: rem(20);
+
+  &__btn {
+    padding: rem(4) rem(8);
+    border: 1px solid var(--white);
+    border-radius: rem(4);
+    color: var(--white);
+    background: transparent;
+    cursor: pointer;
+    transition: all var(--bs-transition);
+    font-size: rem(14);
+
+    &.active {
+      background-color: var(--white);
+      color: var(--primary-color);
+    }
+
+    @include any-hover {
+      background-color: var(--white);
+      color: var(--primary-color);
+    }
+  }
+
+  @include media-mx(768) {
+    margin-right: rem(50);
+  }
+}

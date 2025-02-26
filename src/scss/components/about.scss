@@ -1,0 +1,74 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+.about {
+  padding: rem(80) 0;
+  background-color: var(--light-gray);
+
+  &__title {
+    text-align: center;
+    font-size: rem(40);
+    font-weight: 700;
+    margin-bottom: rem(48);
+
+    @include media-mx(768) {
+      font-size: rem(32);
+      margin-bottom: rem(32);
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: rem(64);
+
+    @include media-mx(992) {
+      grid-template-columns: 1fr;
+      gap: rem(48);
+    }
+  }
+
+  &__text {
+    p {
+      margin-bottom: rem(24);
+      font-size: rem(16);
+      line-height: 1.6;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__advantages {
+    display: grid;
+    gap: rem(32);
+    min-width: rem(300);
+
+    @include media-mx(992) {
+      grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+      min-width: 0;
+    }
+  }
+}
+
+.advantage {
+  text-align: center;
+  padding: rem(24);
+  background-color: var(--white);
+  border-radius: rem(10);
+  box-shadow: var(--bs-shadow);
+
+  &__number {
+    font-size: rem(40);
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: rem(8);
+  }
+
+  &__text {
+    color: var(--secondary-color);
+    font-size: rem(16);
+    line-height: 1.4;
+  }
+}

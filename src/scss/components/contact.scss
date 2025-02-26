@@ -1,0 +1,102 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+.contact {
+  padding: rem(80) 0;
+  background-color: #e2e4e6;
+
+  &__title {
+    text-align: center;
+    font-size: rem(40);
+    font-weight: 700;
+    margin-bottom: rem(48);
+
+    @include media-mx(768) {
+      font-size: rem(32);
+      margin-bottom: rem(32);
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(64);
+
+    @include media-mx(992) {
+      grid-template-columns: 1fr;
+      gap: rem(48);
+    }
+  }
+
+  &__form {
+    display: grid;
+    gap: rem(16);
+  }
+
+  &__input,
+  &__textarea {
+    padding: rem(16);
+    border: 1px solid #ddd;
+    border-radius: rem(5);
+    width: 100%;
+    font-size: rem(16);
+    transition: border-color var(--bs-transition);
+
+    &:focus {
+      border-color: var(--accent-color);
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    height: rem(150);
+    resize: vertical;
+  }
+
+  &__button {
+    padding: rem(16) rem(32);
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    border-radius: rem(5);
+    cursor: pointer;
+    font-size: rem(16);
+    font-weight: 500;
+    transition: background-color var(--bs-transition);
+
+    @include any-hover {
+      background-color: darken(#e67e22, 10%);
+    }
+  }
+
+  &__info {
+    display: grid;
+    gap: rem(32);
+    align-content: start;
+  }
+
+  &__item {
+    h3 {
+      font-size: rem(20);
+      font-weight: 600;
+      margin-bottom: rem(8);
+    }
+
+    p {
+      color: var(--secondary-color);
+      line-height: 1.6;
+      margin-bottom: rem(4);
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color var(--bs-transition);
+
+      @include any-hover {
+        color: darken(#e67e22, 10%);
+        text-decoration: underline;
+      }
+    }
+  }
+}

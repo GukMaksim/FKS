@@ -1,0 +1,70 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+.products {
+  padding: rem(80) 0;
+  background-color: #e2e4e6;
+
+  &__title {
+    text-align: center;
+    font-size: rem(40);
+    font-weight: 700;
+    margin-bottom: rem(48);
+
+    @include media-mx(768) {
+      font-size: rem(32);
+      margin-bottom: rem(32);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
+    gap: rem(32);
+
+    @include media-mx(768) {
+      gap: rem(24);
+    }
+  }
+}
+
+.product-card {
+  background: var(--white);
+  border-radius: rem(10);
+  overflow: hidden;
+  box-shadow: var(--bs-shadow);
+  transition: transform var(--bs-transition);
+
+  @include any-hover {
+    transform: translateY(rem(-5));
+  }
+
+  &__image {
+    width: 100%;
+    height: rem(250);
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: rem(24);
+  }
+
+  &__title {
+    font-size: rem(24);
+    font-weight: 600;
+    margin-bottom: rem(8);
+
+    @include media-mx(768) {
+      font-size: rem(20);
+    }
+  }
+
+  &__description {
+    color: var(--secondary-color);
+    line-height: 1.6;
+
+    @include media-mx(768) {
+      font-size: rem(14);
+    }
+  }
+}

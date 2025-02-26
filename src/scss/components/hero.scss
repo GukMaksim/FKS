@@ -1,0 +1,56 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('@img/hero-bg.jpg') center/cover;
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: rem(56);
+    font-weight: 700;
+    margin-bottom: rem(16);
+    
+    @include media-mx(768) {
+      font-size: rem(40);
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(24);
+    margin-bottom: rem(32);
+    
+    @include media-mx(768) {
+      font-size: rem(20);
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    padding: rem(16) rem(32);
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: rem(5);
+    text-decoration: none;
+    transition: background-color var(--bs-transition);
+    font-weight: 500;
+
+    @include any-hover {
+      background-color: darken(#e67e22, 10%);
+    }
+
+    @include media-mx(768) {
+      padding: rem(12) rem(24);
+      font-size: rem(16);
+    }
+  }
+}

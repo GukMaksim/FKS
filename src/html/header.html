@@ -1,0 +1,25 @@
+<header class="header" data-lp>
+	<div class="header__container">
+		<a href="#" class="header__logo logo"><img src="@img/FKS-logo.png" alt="ФКС логотип" width="40" height="40"><span>ТОВ "ФКС"</span></a>
+		<nav class="header__menu menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#" class="menu__link" data-translate="home">Головна</a></li>
+				<li class="menu__item"><a href="#" class="menu__link" data-translate="about">Про нас</a></li>
+				<li class="menu__item"><a href="#" class="menu__link" data-translate="products">Продукція</a>
+					<ul class="menu__sub-list">
+						<li class="menu__sub-item"><a href="#" class="menu__sub-link" data-translate="granite">Граніт</a></li>
+						<li class="menu__sub-item"><a href="#" class="menu__sub-link" data-translate="marble">Мармур</a></li>
+						<li class="menu__sub-item"><a href="#" class="menu__sub-link" data-translate="quartz">Кварц</a></li>
+						<li class="menu__sub-item"><a href="#" class="menu__sub-link" data-translate="onyx">Онікс</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#" class="menu__link" data-translate="contacts">Контакти</a></li>
+			</ul>
+		</nav>
+		<div class="lang-switcher">
+			<button class="lang-switcher__btn active" data-lang="uk">UA</button>
+			<button class="lang-switcher__btn" data-lang="ru">RU</button>
+		</div>
+		@@include('./icon-menu.html', {})
+	</div>
+</header>

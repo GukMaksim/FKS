@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('html/head.html', {
+    'title': 'FKS Stone - Виробництво виробів з каменю'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html')
+
+      <main class="page">
+        <section class="hero">
+          <div class="hero__container">
+            <h1 class="hero__title" data-translate="heroTitle">Вироби з натурального каменю</h1>
+            <p class="hero__subtitle" data-translate="heroSubtitle">Якісні вироби з граніту та мармуру за індивідуальним замовленням</p>
+            <a href="#contact" class="hero__button" data-translate="orderConsultation">Замовити консультацію</a>
+          </div>
+        </section>
+
+        <section class="products" id="products">
+          <div class="products__container">
+            <h2 class="products__title" data-translate="ourProducts">Наша продукція</h2>
+            <div class="products__grid">
+              <article class="product-card">
+                <img src="@img/products/countertop.jpg" alt="Стільниці" class="product-card__image">
+                <h3 class="product-card__title" data-translate="countertops">Стільниці</h3>
+                <p class="product-card__description" data-translate="countertopsDesc">Елегантні та довговічні стільниці з граніту для вашої кухні</p>
+              </article>
+              <article class="product-card">
+                <img src="@img/products/windowsill.jpg" alt="Підвіконня" class="product-card__image">
+                <h3 class="product-card__title" data-translate="windowsills">Підвіконня</h3>
+                <p class="product-card__description" data-translate="windowsillsDesc">Підвіконня з натурального каменю</p>
+              </article>
+              <article class="product-card">
+                <img src="@img/products/stairs.jpg" alt="Сходи" class="product-card__image">
+                <h3 class="product-card__title" data-translate="stairs">Сходи</h3>
+                <p class="product-card__description" data-translate="stairsDesc">Надійні та естетичні сходи з натурального каменю</p>
+              </article>
+              <article class="product-card">
+                <img src="@img/products/fireplaces.jpg" alt="Каміни" class="product-card__image">
+                <h3 class="product-card__title" data-translate="fireplaces">Каміни</h3>
+                <p class="product-card__description" data-translate="fireplacesDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </article>
+              <article class="product-card">
+                <img src="@img/products/bathroom.jpg" alt="Ванна кімната" class="product-card__image">
+                <h3 class="product-card__title" data-translate="bathroom">Ванна кімната</h3>
+                <p class="product-card__description" data-translate="bathroomDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </article>
+              <article class="product-card">
+                <img src="@img/products/floors.jpg" alt="Підлоги" class="product-card__image">
+                <h3 class="product-card__title" data-translate="floors">Підлоги</h3>
+                <p class="product-card__description" data-translate="floorsDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div class="about__container">
+            <h2 class="about__title" data-translate="aboutUsTitle">Про нас</h2>
+            <div class="about__content">
+              <div class="about__text">
+                <p data-translate="aboutUsText1">FKS Stone - провідний виробник виробів з натурального каменю в Україні. Ми спеціалізуємося на створенні високоякісних виробів з граніту та мармуру за індивідуальними замовленнями.</p>
+                <p data-translate="aboutUsText2">Наша компанія має власне виробництво, оснащене сучасним обладнанням, що дозволяє нам гарантувати найвищу якість продукції та оптимальні терміни виконання замовлень.</p>
+              </div>
+              <div class="about__advantages">
+                <div class="advantage">
+                  <span class="advantage__number">15+</span>
+                  <p class="advantage__text" data-translate="yearsExperience">Років досвіду</p>
+                </div>
+                <div class="advantage">
+                  <span class="advantage__number">1000+</span>
+                  <p class="advantage__text" data-translate="completedProjects">Виконаних проектів</p>
+                </div>
+                <div class="advantage">
+                  <span class="advantage__number">100%</span>
+                  <p class="advantage__text" data-translate="qualityGuarantee">Гарантія якості</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="contact__container">
+            <h2 class="contact__title" data-translate="contactUs">Зв'яжіться з нами</h2>
+            <div class="contact__content">
+              <form class="contact__form">
+                <input type="text" class="contact__input" data-translate="yourName" placeholder="Ваше ім'я" required>
+                <input type="tel" class="contact__input" data-translate="yourPhone" placeholder="Ваш телефон" required>
+                <textarea class="contact__textarea" data-translate="yourMessage" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit" class="contact__button" data-translate="send">Надіслати</button>
+              </form>
+              <div class="contact__info">
+                <div class="contact__item">
+                  <h3 data-translate="address">Адреса</h3>
+                  <p data-translate="addressValue">м. Київ, вул. Лебединська, 4</p>
+                </div>
+                <div class="contact__item">
+                  <h3 data-translate="phone">Телефон</h3>
+                  <a href="tel:+380672660909">+38 (067) 266-09-09</a>
+                </div>
+                <div class="contact__item">
+                  <h3 data-translate="email">Email</h3>
+                  <a href="mailto:fks.marble@gmail.com">fks.marble@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @@include('html/footer.html')
+    </div>
+  </body>
+</html>
