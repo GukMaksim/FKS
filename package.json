@@ -33,7 +33,7 @@
 	"bugs": {
 		"url": "https://github.com/GukMaksim/FKS/issues"
 	},
-	"homepage": "https://GukMaksim.github.io/FKS",
+	"homepage": "https://gukmaksim.github.io/FKS",
 	"devDependencies": {
 		"@archoleat/stylelint-config-extended-scss": "^1.6.9",
 		"autoprefixer": "^10.4.14",
