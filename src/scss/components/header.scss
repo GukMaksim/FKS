@@ -1,3 +1,4 @@
+//BASE
 @import "../config/functions";
 @import "../config/mixins";
 
@@ -28,6 +29,9 @@
 
   // .header__logo
   &__logo {
+    /* @include media-mx(768) {
+      display: none;
+    } */
     display: flex;
     align-items: center;
     gap: rem(10);
@@ -74,7 +78,7 @@
     justify-content: space-between;
     gap: rem(40);
     padding: rem(20);
-    background: #e2e4e6;
+    background-color: var(--bs-bgcolor);
     transition: var(--bs-transition);
     overflow: hidden auto;
 
@@ -125,7 +129,7 @@
     align-items: center;
     gap: rem(6);
     font-size: rem(17);
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     color: var(--bs-font-color);
     line-height: prc(19, 16);

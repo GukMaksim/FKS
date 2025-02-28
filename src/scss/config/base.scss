@@ -16,6 +16,9 @@
 	margin-inline: auto;
 	max-inline-size: rem($max-width-container);
 	padding-inline: rem($main-offset);
+	max-width: calc(var(--container-width) + 30px);
+  	margin: 0 auto;
+  	padding: 0 15px;
 }
 
 // Стили отзывчивых картинок (IBG) ============================================
@@ -41,7 +44,9 @@
 // Оболочка ===================================================================
 .wrapper {
 	display: flex;
+	flex-direction: column;
 	min-block-size: 100%;
+	min-height: 100vh;
 
 	/** Поменять на clip - если используется в проекте position: sticky */
 	overflow: hidden;

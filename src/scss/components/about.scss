@@ -3,7 +3,11 @@
 
 .about {
   padding: rem(80) 0;
-  background-color: var(--light-gray);
+  background-color: var(--secondary-bgcolor);
+
+  &__container {
+    max-width: rem(1200);
+  }
 
   &__title {
     text-align: center;
@@ -55,14 +59,14 @@
 .advantage {
   text-align: center;
   padding: rem(24);
-  background-color: var(--white);
+  background-color: var(--white-color);
   border-radius: rem(10);
   box-shadow: var(--bs-shadow);
 
   &__number {
     font-size: rem(40);
     font-weight: 700;
-    color: var(--accent-color);
+    color: #bf6516;
     margin-bottom: rem(8);
   }
 

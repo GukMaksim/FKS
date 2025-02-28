@@ -3,7 +3,10 @@
 
 .products {
   padding: rem(80) 0;
-  background-color: #e2e4e6;
+  background-color: var(--bs-bgcolor);
+
+  &__container {
+    max-width: rem(1200);}
 
   &__title {
     text-align: center;
@@ -29,11 +32,12 @@
 }
 
 .product-card {
-  background: var(--white);
+  background: var(--white-color);
   border-radius: rem(10);
   overflow: hidden;
   box-shadow: var(--bs-shadow);
   transition: transform var(--bs-transition);
+  cursor: pointer;
 
   @include any-hover {
     transform: translateY(rem(-5));
@@ -53,6 +57,7 @@
     font-size: rem(24);
     font-weight: 600;
     margin-bottom: rem(8);
+    padding: 1.5rem 1.5rem 0.5rem;
 
     @include media-mx(768) {
       font-size: rem(20);
@@ -60,7 +65,9 @@
   }
 
   &__description {
-    color: var(--secondary-color);
+    // color: var(--secondary-color);
+    color: #bf6516;
+    padding: 0 1.5rem 1.5rem;
     line-height: 1.6;
 
     @include media-mx(768) {

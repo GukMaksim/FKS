@@ -65,6 +65,9 @@ body {
 	font-weight: var(--bs-font-weight);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	color: var(--text-color);
+	line-height: 1.6;
+	background-color: var(--bs-bgcolor);
 }
 
 input,

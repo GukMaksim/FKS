@@ -3,7 +3,11 @@
 
 .contact {
   padding: rem(80) 0;
-  background-color: #e2e4e6;
+  background-color: var(--bs-bgcolor);
+
+  &__container {
+    max-width: rem(1200);
+  }
 
   &__title {
     text-align: center;
@@ -43,7 +47,7 @@
     transition: border-color var(--bs-transition);
 
     &:focus {
-      border-color: var(--accent-color);
+      border-color: var(--bs-bgcolor);
       outline: none;
     }
   }
@@ -55,13 +59,14 @@
 
   &__button {
     padding: rem(16) rem(32);
-    background-color: var(--accent-color);
-    color: var(--white);
+    background-color: #e67e22;
+    color: var(--white-color);
     border: none;
     border-radius: rem(5);
     cursor: pointer;
     font-size: rem(16);
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
     transition: background-color var(--bs-transition);
 
     @include any-hover {
@@ -83,13 +88,13 @@
     }
 
     p {
-      color: var(--secondary-color);
+      color: var(--black-color);
       line-height: 1.6;
       margin-bottom: rem(4);
     }
 
     a {
-      color: var(--accent-color);
+      color: var(--bs-font-color);
       text-decoration: none;
       transition: color var(--bs-transition);
 
