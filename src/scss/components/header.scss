@@ -135,7 +135,7 @@
     line-height: prc(19, 16);
     cursor: pointer;
 
-    &:hover {
+    @include any-hover {
       color: var(--primary-hover-color);
     }
     &._active {
@@ -183,7 +183,7 @@ line-height: prc(29, 24);
     transition: color 0.3s ease;
     text-transform: uppercase;
 
-    &:hover {
+    @include any-hover {
       color: var(--primary-hover-color);
     }
   }

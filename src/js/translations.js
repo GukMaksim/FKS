@@ -8,7 +8,8 @@ export const translations = {
     // Products submenu
     granite: 'Граніт',
     marble: 'Мармур',
-    quartz: 'Кварц',
+    quartz: 'Кварцит',
+    travertin: 'Травертин',
     onyx: 'Онікс',
     // Hero section
     heroTitle: 'Вироби з натурального каменю',
@@ -44,7 +45,18 @@ export const translations = {
     address: 'Адреса',
     addressValue: 'м. Київ, вул. Лебединська, 4',
     phone: 'Телефон',
-    email: 'Email'
+    email: 'Email',
+    // Footer section
+    stoneProducts: "Вироби з каменю",
+    stoneCatalog: "Каталог каменю",
+    information: "Інформація",
+    countertops: "Стільниці",
+    windowsill: "Підвіконня",
+    stairs: "Сходи",
+    fireplaces: "Каміни",
+    tile: "Плитка",
+    ourObjects: "Наші об'єкти",
+    production: "Виробництво",
   },
   ru: {
     // Header
@@ -55,8 +67,9 @@ export const translations = {
     // Products submenu
     granite: 'Гранит',
     marble: 'Мрамор',
-    quartz: 'Кварц',
+    quartz: 'Кварцит',
     onyx: 'Оникс',
+    travertin: 'Травертин',
     // Hero section
     heroTitle: 'Изделия из натурального камня',
     heroSubtitle: 'Качественные изделия из гранита и мрамора по индивидуальному заказу',
@@ -91,6 +104,17 @@ export const translations = {
     address: 'Адрес',
     addressValue: 'г. Киев, ул. Лебединская, 4',
     phone: 'Телефон',
-    email: 'Email'
+    email: 'Email',
+    // Footer section
+    stoneProducts: "Изделия из камня",
+    stoneCatalog: "Каталог камня",
+    information: "Информация",
+    countertops: "Столешницы",
+    windowsill: "Подоконники",
+    stairs: "Ступеньки",
+    fireplaces: "Камины",
+    tile: "Плитка",
+    ourObjects: "Наши объекты",
+    production: "Производство",
   }
 };

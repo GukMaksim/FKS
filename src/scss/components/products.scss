@@ -40,7 +40,7 @@
   cursor: pointer;
 
   @include any-hover {
-    transform: translateY(rem(-5));
+    transform: translateY(rem(-10));
   }
 
   &__image {
