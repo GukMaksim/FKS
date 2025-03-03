@@ -1,0 +1,40 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+.scroll-top {
+  position: fixed;
+  right: rem(20);
+  bottom: rem(20);
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(rem(10));
+  transition: all var(--bs-transition);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  @include any-hover {
+    background: var(--primary-hover-color);
+  }
+
+  @include media-mx(768) {
+    right: rem(15);
+    bottom: rem(15);
+    width: rem(35);
+    height: rem(35);
+  }
+}

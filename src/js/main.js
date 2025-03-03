@@ -16,6 +16,7 @@ import { BurgerMenu } from './modules/burger-menu';
 import { Tabs } from './modules/tabs';
 import { Accordion } from './modules/accordion';
 import { LanguageSwitcher } from './modules/LanguageSwitcher';
+import { ScrollTop } from './modules/ScrollTop';
 
 BaseHelpers.checkWebpSupport();
 
@@ -26,6 +27,7 @@ BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
 
 BaseHelpers.headerFixed();
+new ScrollTop();
 
 /**
  * Открытие/закрытие модальных окон
